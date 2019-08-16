@@ -1,5 +1,16 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
+import CharCard from "./components/CharCard.js"
+import styled from 'styled-components';
+
+const Header = styled.h1`
+color: #8B8312;
+font-family: "Walter Turncoat";
+font-weight: bolder;
+font-size: 4rem;
+
+`
+
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +22,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Header className="Header">React Wars</Header>
+      <CharCard />
     </div>
   );
 }

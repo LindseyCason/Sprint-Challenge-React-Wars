@@ -25,14 +25,21 @@ In this challenge, create a web page that presents a styled list of Star Wars ch
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
+    React is a JavaScript library that is faster than our previous options and is scalable in large projects. It changes the DOM via the virtual DOM which changes need to be made quickly without having to reload the entire page.
 
 - [ ] What does it mean to _think_ in react?
+    Think in react is breaking out each section into its own component so it can be built out this way keeping in mind that each component should only have one purpose.
 
 - [ ] Describe state.
+    State is a way to hold the information you are receiving so you can access the data and is used for interactivity. State is controlled by the component and is managed inside of the component. So, if you were to set info to response.data you can  then setState to info. Likewise, if you were to set info to response.data.name and then set info to setState, it will reflect response.data.name
 
 - [ ] Describe props.
+    Props (properties)are a way of passing data from parent to child. If the properties are not defined in the parent they cannot be used in any children or future grandchildren. Props should never change.
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+    Side Effects are operations that affect other components. They are ran on every render including the first render. If I’m understanding the second part of the question correctly, an example of this would be mapping over your response and having each property you declared update the state each time. If nothing changes, then the page does not re-render.
+
+
 
 ## Project Set Up
 

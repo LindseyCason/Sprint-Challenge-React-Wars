@@ -6,6 +6,7 @@ const Div = styled.div`
 color: #fcba03;
     width: 25%;
     background-color: #E6D8CA;
+    box-shadow: 5px 5px 5px #8B831260;
     opacity: .95;
     padding: 10px;
     display: flex;

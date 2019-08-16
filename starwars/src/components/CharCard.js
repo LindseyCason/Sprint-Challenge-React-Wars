@@ -5,12 +5,10 @@ import styled from 'styled-components';
 
 
 const Container = styled.div`
-    color: #ffffff60;
-    // position: absolute;
     width: 95%;
     align-items:center;
-    // top: 0;
     background-color: #ffffff60;
+    box-shadow: 5px 5px 5px #8B831260;
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -23,18 +21,12 @@ const Container = styled.div`
 
 
 
-
-
-
-
-
-
 export default function CharCard(){
     const [info, setInfo] = useState([]);
     // const [name, setName] = useState([]);
     // const [height, setHeight] = useState([]);
     // const [mass, setMass] = useState([]);
-
+     //DONT NEED ALL OF THESE, JUST THE ONE AND THEN GO INTO THAT OBJ TO SET PROPERTIES BELOW
 
 useEffect(()=>{
 
@@ -42,14 +34,9 @@ axios
 .get(`https://swapi.co/api/people/?format=json`)
 .then(response =>{
     const info = response.data.results;
-    console.log("Starwars", info);
+    // console.log("Starwars", info); // WORKING
     setInfo(info);
-    // const name = response.data.results.name;
-    // setName(name);
-    // const height = response.data.results.height;
-    // setHeight(height);
-    // const mass = response.data.results.mass;
-    // setMass(mass);
+
 });
 },[])
 

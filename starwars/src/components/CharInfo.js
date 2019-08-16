@@ -1,7 +1,34 @@
 import React from "react";
 // import { Card } from 'semantic-ui-react';
+import styled from 'styled-components';
 
+const Div = styled.div`
+color: #fcba03;
+    width: 25%;
+    background-color: #E6D8CA;
+    opacity: .95;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius:3px;
+`
+;
 
+const H1 = styled.h1`
+color: #E39C54;
+font-family: "Shadows Into Light";
+opacity: 1.;
+
+`;
+
+const H2 = styled.h2`
+color: #8B8312;
+font-family: "Walter Turncoat";
+opacity 1.;
+
+`;
 
 
 
@@ -19,13 +46,13 @@ const CharInfo = props =>{
         //     </Card.Content>
         // </Card>
 
-        <div>
+        <Div>
             <section>
-                <h1>Name: {props.name}</h1>
-                <h2>Height: {props.height}</h2>
-                <h2>Mass: {props.mass}</h2>
+                <H1>Name: {props.name}</H1>
+                <H2>Height: {props.height}</H2>
+                <H2>Mass: {props.mass}</H2>
             </section>
-        </div>
+        </Div>
 
 
     );

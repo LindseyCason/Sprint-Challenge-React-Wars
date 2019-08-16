@@ -1,6 +1,33 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CharInfo from "./CharInfo.js";
+import styled from 'styled-components';
+
+
+const Container = styled.div`
+    color: #ffffff60;
+    // position: absolute;
+    width: 95%;
+    align-items:center;
+    // top: 0;
+    background-color: #ffffff60;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius:3px;
+`
+;
+
+
+
+
+
+
+
+
 
 export default function CharCard(){
     const [info, setInfo] = useState([]);
@@ -27,7 +54,7 @@ axios
 },[])
 
 return (
-    <div className="chars">
+    <Container>
 {info.map(chars=>{
     return(
         <CharInfo
@@ -37,7 +64,7 @@ return (
         />
     );
 })}
-    </div>
+    </Container>
 
 
 );

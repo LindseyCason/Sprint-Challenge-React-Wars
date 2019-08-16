@@ -20,6 +20,8 @@ const H1 = styled.h1`
 color: #E39C54;
 font-family: "Shadows Into Light";
 opacity: 1.;
+border-bottom: 2px solid white;
+font-size: 2rem;
 
 `;
 
@@ -29,6 +31,7 @@ font-family: "Walter Turncoat";
 opacity 1.;
 
 `;
+
 
 
 
@@ -48,7 +51,7 @@ const CharInfo = props =>{
 
         <Div>
             <section>
-                <H1>Name: {props.name}</H1>
+                <H1>{props.name}</H1>
                 <H2>Height: {props.height}</H2>
                 <H2>Mass: {props.mass}</H2>
             </section>
